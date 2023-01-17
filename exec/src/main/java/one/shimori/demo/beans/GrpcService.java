@@ -46,7 +46,7 @@ public class GrpcService {
 
     @PreDestroy
     public void destroy() {
-        logger.info("hmmmm");
+        logger.info("gRPC Service is shutting down!");
 
         server.shutdown();
         try {
